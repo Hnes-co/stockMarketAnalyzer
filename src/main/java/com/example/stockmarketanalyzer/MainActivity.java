@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     public void analyzeStock(View view) {
         EditText editStockText = (EditText) findViewById(R.id.stockInput);
         stock = editStockText.getText().toString().toUpperCase();
-        String urlString = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" + stock + "&apikey=FBLVCVOY0XALLAIU";
+        String urlString = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" + stock + "&apikey=API_KEY";
 
         readStockData(urlString);
     }
